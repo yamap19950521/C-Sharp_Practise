@@ -1,7 +1,7 @@
 ﻿//註解
 //這是單行註解
 /*這是
-        雙行
+        多行
             註解*/
 
 
@@ -62,4 +62,62 @@ System.Console.WriteLine("Happy".IndexOf('b')); //找不到給-1
 System.Console.WriteLine("Happy time".IndexOf("time")); //如果給的是字串 找第一個字母
 //(6)字串第Ｎ位以前刪掉 ( .Substring(N) )
 System.Console.WriteLine("Happy".Substring(2));
-System.Console.WriteLine("Happy".Substring(1, 2)); //字串第一位以前刪掉，往後留兩位 
+System.Console.WriteLine("Happy".Substring(1, 2)); //字串第一位以前刪掉，往後留兩位
+
+
+
+
+//數字常見的用法(整數、浮點數)
+//數字運算
+System.Console.WriteLine( 6 + 2 );
+System.Console.WriteLine( 6 - 2);
+System.Console.WriteLine( 6 * 2);
+System.Console.WriteLine( 6 / 2);
+System.Console.WriteLine( 5.0 / 2);
+
+//數字的方法
+//(1) 絕對值System.Math.Abs()
+System.Console.WriteLine(System.Math.Abs(-10));
+System.Console.WriteLine(System.Math.Abs(-10.5));
+
+//(2)次方System.Math.Pow( x,y )
+System.Console.WriteLine(System.Math.Pow(2, 3));
+
+//(3)開根號System.Math.Sqrt()
+System.Console.WriteLine(System.Math.Sqrt(64));
+
+//(4)比哪個大？System.Math.Max( x, y )
+System.Console.WriteLine(System.Math.Max(101, 100));
+
+//(5)比哪個小？System.Math.Min( x, y )
+System.Console.WriteLine(System.Math.Min(101, 100));
+
+//四捨五入 System.Math.Round()
+System.Console.WriteLine(System.Math.Round(10.555));
+System.Console.WriteLine(System.Math.Round(10.4));
+
+
+
+//如何取得用戶輸入？
+System.Console.Write("請問您的名字是？");
+string name2 = System.Console.ReadLine();
+System.Console.Write("請問您的年紀是？");
+string age2 = System.Console.ReadLine();
+System.Console.WriteLine("您好啊" + name2 + "你的年紀是" + age2 + "歲");
+
+
+//基本計算機
+
+//如果是整數
+System.Console.Write("請輸入第一個數字");
+int oneNum = System.Convert.ToInt32(System.Console.ReadLine());
+System.Console.Write("請輸入第二個數字");
+int twoNum = System.Convert.ToInt32(System.Console.ReadLine());
+System.Console.WriteLine(oneNum + twoNum);
+
+//如果是浮點數
+System.Console.Write("請輸入第一個數字");
+double oneNum2 = System.Convert.ToDouble(System.Console.ReadLine());
+System.Console.Write("請輸入第二個數字");
+double twoNum2 = System.Convert.ToDouble(System.Console.ReadLine());
+System.Console.WriteLine(oneNum2 + twoNum2);
